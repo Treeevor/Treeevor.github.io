@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TreevNFred – Templates</title>
+    <link>http://localhost:1313/templates/</link>
+    <description>Recent content in Templates on TreevNFred</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>sheridad33@gmail.com (Trevor)</managingEditor>
+    <webMaster>sheridad33@gmail.com (Trevor)</webMaster>
+    
+	  <atom:link href="http://localhost:1313/templates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/templates/blank-blog-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>sheridad33@gmail.com (Trevor)</author>
+      <guid>http://localhost:1313/templates/blank-blog-post/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/templates/blank-hike-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>sheridad33@gmail.com (Trevor)</author>
+      <guid>http://localhost:1313/templates/blank-hike-post/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

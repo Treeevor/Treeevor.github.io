@@ -12,3 +12,18 @@ params:
   author:
     name: "Trevor"
     email: "sheridad33@gmail.com"
+
+menu:
+  main:
+    - name: Posts
+      url: /Posts/
+      weight: 1
+    - name: Hiking
+      url: /Posts/Hiking/
+      weight: 2
+    - name: Map
+      url: /map/
+      weight: 3
+    - name: About
+      url: /About/
+      weight: 4

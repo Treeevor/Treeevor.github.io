@@ -1,0 +1,35 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TreevNFred – Utah_highpoints</title>
+    <link>http://localhost:1313/categories/utah_highpoints/</link>
+    <description>Recent content in Utah_highpoints on TreevNFred</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>sheridad33@gmail.com (Trevor)</managingEditor>
+    <webMaster>sheridad33@gmail.com (Trevor)</webMaster>
+    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/categories/utah_highpoints/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Frary Peak</title>
+      <link>http://localhost:1313/posts/hiking/frary-peak/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <author>sheridad33@gmail.com (Trevor)</author>
+      <guid>http://localhost:1313/posts/hiking/frary-peak/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This was done as our fifth peak in the quest to complete all Utah range highpoints.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
