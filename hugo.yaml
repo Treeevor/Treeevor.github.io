@@ -1,0 +1,14 @@
+baseURL: https://Treeevor.github.io/
+languageCode: en-us
+title: TreevNFred
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+params:
+  siteName: "TreevNFred"
+  siteTagline: "Adventures with Fred and more"
+  author:
+    name: "Trevor"
+    email: "sheridad33@gmail.com"
