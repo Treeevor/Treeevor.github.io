@@ -22,3 +22,4 @@ strava_link: https://www.strava.com/activities/17557122314
 high_point: true
 ---
 This was done as our fifth peak in the quest to complete all Utah range highpoints. 
+[Utah Range High Points](Posts/Hiking/Utah%20Mountain%20Range%20High Points)

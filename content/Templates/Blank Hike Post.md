@@ -1,13 +1,15 @@
 ---
-title: ""
+title:
 date:
 draft: true
-categories:
-  - ""
 slug:
+categories:
+  - hiking
 tags: []
 description: ""
-coordinates: []
+coordinates:
+  - 
+  - 
 trail_miles:
 elevation_gain:
 difficulty:
@@ -15,5 +17,29 @@ solitude:
 beauty:
 location: ""
 strava_link: ""
-high_point:
+high_point: false
 ---
+
+## Overview
+
+
+## The Hike
+
+
+## Fred's Take
+
+
+## Stats at a Glance
+
+| Stat | Value |
+|---|---|
+| Miles | |
+| Elevation Gain | |
+| Difficulty | /10 |
+| Beauty | /10 |
+| Solitude | /10 |
+| Location | |
+
+## Photos
+
+## Would I Do It Again?

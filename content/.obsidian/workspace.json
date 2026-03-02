@@ -11,10 +11,14 @@
             "id": "8e595a8a387d3b99",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Posts/_index.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "_index"
             }
           }
         ]
@@ -173,18 +177,27 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "8e595a8a387d3b99",
   "lastOpenFiles": [
-    "Posts/Hiking/Frary Peak.md",
-    "map/_index.md",
-    "Posts/_index.md",
-    "map",
     "Posts/Hiking/_index.md",
-    "Templates/Blank Hike Post.md",
+    "Posts/_index.md",
+    "Posts/Hiking/Frary Peak.md",
+    "About.md",
+    "Posts/Hiking/Utah Mountain Range High Points.md",
+    "_index.md",
     "Templates/Blank Blog Post.md",
+    "Templates/Blank Hike Post.md",
+    "Posts/Hiking/Utah.md",
+    "Posts/Hiking/FraryPeak.md",
+    "Posts/hiking.md",
+    "about",
+    "Posts/Hiking/Untitled 1.md",
+    "map/_index.md",
+    "map",
     "Templates",
     "Posts/Fitness",
     "Posts/Tech",

@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+
+  <!-- Hero Section -->
+  <div style="text-align: center; padding: 3rem 0 2rem;">
+    <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">
+      {{ .Site.Params.siteName }}
+    </h1>
+    <p style="font-size: 1.2rem; color: #6b7280;">
+      {{ .Site.Params.siteTagline }}
+    </p>
+  </div>
+
+  <!-- Recent Posts -->
+  <div style="margin-top: 2rem;">
+    <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
+      Recent Posts
+    </h2>
+    {{ range first 5 (where .Site.RegularPages "Section" "!=" "") }}
+    <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #f3f4f6;">
+      <div style="font-size: 0.8rem; color: #9ca3af; margin-bottom: 0.25rem;">
+        {{ .Date.Format "January 2, 2006" }}
+        {{ with .Params.categories }}
+          · {{ range . }}<span style="text-transform: capitalize;">{{ . }}</span>{{ end }}
+        {{ end }}
+      </div>
+      <a href="{{ .Permalink }}" style="font-size: 1.1rem; font-weight: 600; text-decoration: none; color: inherit;">
+        {{ .Title }}
+      </a>
+      {{ with .Params.description }}
+      <p style="font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem;">{{ . }}</p>
+      {{ end }}
+      {{ if .Params.coordinates }}
+      <div style="font-size: 0.8rem; color: #6b7280; margin-top: 0.25rem;">
+        📍 {{ .Params.location }} &nbsp;
+        🥾 {{ .Params.trail_miles }} miles &nbsp;
+        ⬆️ {{ .Params.elevation_gain }}ft
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+  <!-- Category Links -->
+  <div style="margin-top: 2rem;">
+    <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem;">
+      Explore
+    </h2>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" style="padding: 0.5rem 1rem; border: 1px solid #e5e7eb; border-radius: 6px; text-decoration: none; color: inherit; font-size: 0.9rem;">
+        {{ .Name }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+
+</div>
+{{ end }}

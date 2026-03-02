@@ -1,18 +1,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TreevNFred – TreevNFred</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on TreevNFred</description>
+    <title>TreevNFred – Abouts</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in Abouts on TreevNFred</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>sheridad33@gmail.com (Trevor)</managingEditor>
     <webMaster>sheridad33@gmail.com (Trevor)</webMaster>
-    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
     
     
       
+        
       
     
     

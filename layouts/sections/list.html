@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+
+  <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 2rem;">
+    {{ .Title }}
+  </h1>
+
+  {{ range .Pages }}
+  <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #f3f4f6;">
+    <div style="font-size: 0.8rem; color: #9ca3af; margin-bottom: 0.25rem;">
+      {{ .Date.Format "January 2, 2006" }}
+    </div>
+    <a href="{{ .Permalink }}" style="font-size: 1.1rem; font-weight: 600; text-decoration: none; color: inherit;">
+      {{ .Title }}
+    </a>
+    {{ with .Params.description }}
+    <p style="font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem;">{{ . }}</p>
+    {{ end }}
+    {{ if .Params.coordinates }}
+    <div style="font-size: 0.8rem; color: #6b7280; margin-top: 0.25rem;">
+      📍 {{ .Params.location }} &nbsp;
+      🥾 {{ .Params.trail_miles }} miles &nbsp;
+      ⬆️ {{ .Params.elevation_gain }}ft &nbsp;
+      {{ $d := .Params.difficulty }}
+      {{ if le $d 3 }}🟢{{ else if le $d 6 }}🟠{{ else }}🔴{{ end }}
+      Difficulty: {{ $d }}/10
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+</div>
+{{ end }}
