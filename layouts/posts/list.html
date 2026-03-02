@@ -5,12 +5,12 @@
     {{ .Title }}
   </h1>
 
-  {{ range .Pages }}
+  {{ range where .Pages "Draft" false }}
   <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #f3f4f6;">
     <div style="font-size: 0.8rem; color: #9ca3af; margin-bottom: 0.25rem;">
       {{ .Date.Format "January 2, 2006" }}
     </div>
-    <a href="{{ .Permalink }}" style="font-size: 1.1rem; font-weight: 600; text-decoration: none; color: inherit;">
+    <a href="{{ .RelPermalink }}" style="font-size: 1.1rem; font-weight: 600; text-decoration: none; color: inherit;">
       {{ .Title }}
     </a>
     {{ with .Params.description }}

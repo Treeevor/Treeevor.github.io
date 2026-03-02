@@ -1,7 +1,7 @@
 ---
 title: Utah Mountain Range High Points
 date: 2026-03-02
-draft: true
+draft: false
 slug: high-points
 categories:
   - utah_highpoints

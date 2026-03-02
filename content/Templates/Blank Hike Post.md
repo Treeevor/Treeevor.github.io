@@ -30,6 +30,7 @@ high_point: false
 
 
 ## Stats at a Glance
+[Ranking Criteria](/Posts/Hiking/Ranking%20Criteria)
 
 | Stat | Value |
 |---|---|

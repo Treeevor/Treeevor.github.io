@@ -24,7 +24,7 @@
           · {{ range . }}<span style="text-transform: capitalize;">{{ . }}</span>{{ end }}
         {{ end }}
       </div>
-      <a href="{{ .Permalink }}" style="font-size: 1.1rem; font-weight: 600; text-decoration: none; color: inherit;">
+      <a href="{{ .RelPermalink }}" style="font-size: 1.1rem; font-weight: 600; text-decoration: none; color: inherit;">
         {{ .Title }}
       </a>
       {{ with .Params.description }}

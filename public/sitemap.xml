@@ -5,7 +5,13 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/hiking/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/hiking/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/hiking/ranking/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
@@ -23,8 +29,8 @@
     <loc>http://localhost:1313/posts/hiking/frary-peak/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/hiking/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/posts/hiking/grassy-hp/</loc>
+    <lastmod>2026-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/templates/blank-blog-post/</loc>
   </url><url>

@@ -1,5 +1,5 @@
 ---
 title: Hiking
-type: section
+type: posts
 layout: list
 ---
