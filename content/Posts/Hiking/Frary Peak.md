@@ -4,10 +4,11 @@ date: 2026-02-28
 draft: false
 slug: frary-peak
 categories:
-  - ""
   - hiking
   - utah_highpoints
-tags: []
+tags:
+  - utah_highpoints
+  - hike
 description: ""
 coordinates:
   - 40.962

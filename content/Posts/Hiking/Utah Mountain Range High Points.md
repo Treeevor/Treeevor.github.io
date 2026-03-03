@@ -5,7 +5,8 @@ draft: false
 slug: high-points
 categories:
   - utah_highpoints
-tags: []
+tags:
+  - info
 description: ""
 ---
 

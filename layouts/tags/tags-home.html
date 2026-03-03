@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+
+  <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">
+    Tags
+  </h1>
+  <p style="color: #6b7280; margin-bottom: 2rem;">Browse all posts by tag.</p>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+    {{ range .Site.Taxonomies.tags.ByCount }}
+    <a href="{{ .Page.RelPermalink }}" style="display: inline-flex; align-items: center; gap: 0.4rem; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.4rem 0.8rem; text-decoration: none; color: inherit; font-size: 0.9rem;">
+      {{ .Page.Title }}
+      <span style="background: #e5e7eb; border-radius: 999px; padding: 0.1rem 0.5rem; font-size: 0.75rem; color: #6b7280;">
+        {{ .Count }}
+      </span>
+    </a>
+    {{ end }}
+  </div>
+
+</div>
+{{ end }}

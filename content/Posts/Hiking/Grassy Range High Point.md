@@ -5,7 +5,9 @@ draft: false
 slug: grassy-hp
 categories:
   - hiking
-tags: []
+tags:
+  - hike
+  - utah_highpoints
 description: ""
 coordinates:
   - 40.93885

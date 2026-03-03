@@ -14,7 +14,13 @@
     <loc>http://localhost:1313/posts/hiking/ranking/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/info/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
@@ -29,6 +35,12 @@
     <loc>http://localhost:1313/posts/hiking/frary-peak/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/hike/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/utah_highpoints/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/hiking/grassy-hp/</loc>
     <lastmod>2026-02-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -38,9 +50,11 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
+    <loc>http://localhost:1313/posts/fitness/</loc>
+  </url><url>
     <loc>http://localhost:1313/map/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/posts/tech/</loc>
   </url><url>
     <loc>http://localhost:1313/templates/</loc>
   </url><url>

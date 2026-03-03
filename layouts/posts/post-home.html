@@ -1,0 +1,57 @@
+{{ define "main" }}
+<div style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+
+  <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 2rem;">
+    {{ .Title }}
+  </h1>
+
+  {{ range .Sections }}
+  {{ $recentPosts := where .Pages "Draft" false }}
+  {{ if gt (len $recentPosts) 0 }}
+  <div style="margin-bottom: 3rem;">
+
+    <!-- Category Header -->
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem;">
+      <h2 style="font-size: 1.3rem; font-weight: 700; text-transform: capitalize;">
+        <a href="{{ .RelPermalink }}" style="text-decoration: none; color: inherit;">
+          {{ .Title }}
+        </a>
+      </h2>
+      {{ if gt (len $recentPosts) 2 }}
+      <a href="{{ .RelPermalink }}" style="font-size: 0.85rem; color: #6b7280; text-decoration: none;">
+        View all {{ len $recentPosts }} →
+      </a>
+      {{ end }}
+    </div>
+
+    <!-- Two Most Recent Posts -->
+    {{ range first 2 $recentPosts }}
+    <div style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid #f3f4f6;">
+      <div style="font-size: 0.8rem; color: #9ca3af; margin-bottom: 0.25rem;">
+        {{ .Date.Format "January 2, 2006" }}
+      </div>
+      <a href="{{ .RelPermalink }}" style="font-size: 1rem; font-weight: 600; text-decoration: none; color: inherit;">
+        {{ .Title }}
+      </a>
+      {{ with .Params.description }}
+      <p style="font-size: 0.875rem; color: #6b7280; margin-top: 0.2rem;">{{ . }}</p>
+      {{ end }}
+      {{ if .Params.coordinates }}
+      <div style="font-size: 0.8rem; color: #6b7280; margin-top: 0.25rem;">
+        📍 {{ .Params.location }} &nbsp;
+        🥾 {{ .Params.trail_miles }} miles &nbsp;
+        ⬆️ {{ .Params.elevation_gain }}ft &nbsp;
+        {{ $d := .Params.difficulty }}
+        {{ if le $d 3 }}🟢{{ else if le $d 6 }}🟠{{ else }}🔴{{ end }}
+        {{ $d }}/10
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+  {{ end }}
+  {{ end }}
+
+</div>
+{{ end }}

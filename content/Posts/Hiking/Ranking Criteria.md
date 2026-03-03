@@ -5,7 +5,8 @@ draft: false
 slug: ranking
 categories:
   - hiking
-tags: []
+tags:
+  - info
 description: ""
 ---
 
