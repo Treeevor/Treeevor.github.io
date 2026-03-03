@@ -43,5 +43,7 @@
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/templates/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/tech/test/</loc>
   </url>
 </urlset>

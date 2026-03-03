@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Hiking/Frary Peak.md",
+                "file": "Posts/Tech/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Frary Peak"
+              "title": "Untitled"
             }
           }
         ]
@@ -183,15 +183,16 @@
   },
   "active": "8e595a8a387d3b99",
   "lastOpenFiles": [
-    "Posts/Hiking/Grassy Range High Point.md",
-    "Posts/Hiking/Ranking Criteria.md",
-    "Posts/Hiking/Utah Mountain Range High Points.md",
-    "Posts/Hiking/Frary Peak.md",
     "Posts/_index.md",
+    "Posts/Tech/Untitled.md",
+    "Posts/Hiking/Frary Peak.md",
+    "Posts/Hiking/Utah Mountain Range High Points.md",
+    "Posts/Hiking/Ranking Criteria.md",
+    "Posts/Hiking/Grassy Range High Point.md",
+    "_index.md",
+    "About.md",
     "Posts/Hiking/_index.md",
     "Templates/Blank Hike Post.md",
-    "About.md",
-    "_index.md",
     "Templates/Blank Blog Post.md",
     "Posts/Hiking/Utah.md",
     "Posts/Hiking/FraryPeak.md",
