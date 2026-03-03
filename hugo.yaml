@@ -14,6 +14,15 @@ params:
     email: "sheridad33@gmail.com"
   search:
     enable: true
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: /logo.svg
+      dark: /logo.svg
+      width: 40
+      height: 40
+      link: /
 
 menu:
   main:
