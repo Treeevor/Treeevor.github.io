@@ -20,6 +20,10 @@ beauty: 3
 location: Antelope Island
 strava_link: https://www.strava.com/activities/17557122314
 high_point: true
+photos:
+  - https://imgur.com/ZkbzG2X.jpg
+  - https://imgur.com/VGiGTzQ.jpg
+  - https://imgur.com/97S5Vfq.jpg
 ---
 
 ## Overview

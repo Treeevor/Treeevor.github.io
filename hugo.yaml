@@ -33,6 +33,11 @@ menu:
     - name: About
       url: /About/
       weight: 5
+    - name: RSS
+      url: /index.xml
+      weight: 6
+      params:
+        icon: rss
 
 outputs:
   home:

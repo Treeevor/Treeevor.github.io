@@ -18,6 +18,7 @@ beauty:
 location: ""
 strava_link: ""
 high_point: false
+photos:
 ---
 
 ## Overview

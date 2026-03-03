@@ -129,7 +129,9 @@ The Hike We started from the intersection of the dirt road that approaches the r
   
   class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
 ><span class="hx:text-center">About</span>
-</a><button type="button" aria-label="Menu" aria-expanded="false" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden hx:hextra-focus-visible-inset"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+</a>
+          <a class="hx:p-2 hx:text-current"  href="/index.xml" title="RSS"><svg height=24 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"/></svg><span class="hx:sr-only">RSS</span>
+          </a><button type="button" aria-label="Menu" aria-expanded="false" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden hx:hextra-focus-visible-inset"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
   </nav>
 </div>
 
@@ -207,6 +209,115 @@ The Hike We started from the intersection of the dirt road that approaches the r
   </div>
   
 
+    
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+      
+      <div id="photo-strip" style="display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 0.5rem; scroll-snap-type: x mandatory;">
+        
+        <img
+          src="https://imgur.com/SFJX8p8.jpg"
+          onclick="openLightbox( 0 )"
+          style="height: 200px; width: auto; border-radius: 6px; cursor: pointer; scroll-snap-align: start; flex-shrink: 0; object-fit: cover;"
+          alt="Hike photo 0"
+        />
+        
+        <img
+          src="https://imgur.com/P2bIoBb.jpg"
+          onclick="openLightbox( 1 )"
+          style="height: 200px; width: auto; border-radius: 6px; cursor: pointer; scroll-snap-align: start; flex-shrink: 0; object-fit: cover;"
+          alt="Hike photo 1"
+        />
+        
+        <img
+          src="https://imgur.com/FC6ntQL.jpg"
+          onclick="openLightbox( 2 )"
+          style="height: 200px; width: auto; border-radius: 6px; cursor: pointer; scroll-snap-align: start; flex-shrink: 0; object-fit: cover;"
+          alt="Hike photo 2"
+        />
+        
+        <img
+          src="https://imgur.com/GurjPav.jpg"
+          onclick="openLightbox( 3 )"
+          style="height: 200px; width: auto; border-radius: 6px; cursor: pointer; scroll-snap-align: start; flex-shrink: 0; object-fit: cover;"
+          alt="Hike photo 3"
+        />
+        
+        <img
+          src="https://imgur.com/BmPKRAu.jpg"
+          onclick="openLightbox( 4 )"
+          style="height: 200px; width: auto; border-radius: 6px; cursor: pointer; scroll-snap-align: start; flex-shrink: 0; object-fit: cover;"
+          alt="Hike photo 4"
+        />
+        
+        <img
+          src="https://imgur.com/nmB1nLs.jpg"
+          onclick="openLightbox( 5 )"
+          style="height: 200px; width: auto; border-radius: 6px; cursor: pointer; scroll-snap-align: start; flex-shrink: 0; object-fit: cover;"
+          alt="Hike photo 5"
+        />
+        
+        <img
+          src="https://imgur.com/WtM2i3A.jpg"
+          onclick="openLightbox( 6 )"
+          style="height: 200px; width: auto; border-radius: 6px; cursor: pointer; scroll-snap-align: start; flex-shrink: 0; object-fit: cover;"
+          alt="Hike photo 6"
+        />
+        
+      </div>
+    </div>
+
+    
+    <div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; align-items:center; justify-content:center;">
+      
+      
+      <div style="position:absolute; top:1rem; right:1.5rem; color:white; font-size:2rem; cursor:pointer; z-index:10000;" onclick="closeLightbox()">✕</div>
+      
+      
+      <div onclick="event.stopPropagation(); changePhoto(-1)" style="position:absolute; left:1rem; color:white; font-size:3rem; cursor:pointer; user-select:none; z-index:10000;">&#8249;</div>
+      
+      
+      <img id="lightbox-img" src="" style="max-height:90vh; max-width:90vw; border-radius:8px; object-fit:contain;" />
+      
+      
+      <div onclick="event.stopPropagation(); changePhoto(1)" style="position:absolute; right:1rem; color:white; font-size:3rem; cursor:pointer; user-select:none; z-index:10000;">&#8250;</div>
+      
+      
+      <div id="lightbox-counter" style="position:absolute; bottom:1rem; color:white; font-size:0.9rem; opacity:0.7;"></div>
+    </div>
+
+    <script>
+      const photos = ["https:\/\/imgur.com\/SFJX8p8.jpg","https:\/\/imgur.com\/P2bIoBb.jpg","https:\/\/imgur.com\/FC6ntQL.jpg","https:\/\/imgur.com\/GurjPav.jpg","https:\/\/imgur.com\/BmPKRAu.jpg","https:\/\/imgur.com\/nmB1nLs.jpg","https:\/\/imgur.com\/WtM2i3A.jpg"];
+      let current = 0;
+
+      function openLightbox(index) {
+        current = index;
+        document.getElementById('lightbox-img').src = photos[current];
+        document.getElementById('lightbox-counter').textContent = (current + 1) + ' / ' + photos.length;
+        const lb = document.getElementById('lightbox');
+        lb.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+      function changePhoto(dir) {
+        current = (current + dir + photos.length) % photos.length;
+        document.getElementById('lightbox-img').src = photos[current];
+        document.getElementById('lightbox-counter').textContent = (current + 1) + ' / ' + photos.length;
+      }
+
+      document.addEventListener('keydown', function(e) {
+        if (document.getElementById('lightbox').style.display === 'flex') {
+          if (e.key === 'ArrowRight') changePhoto(1);
+          if (e.key === 'ArrowLeft') changePhoto(-1);
+          if (e.key === 'Escape') closeLightbox();
+        }
+      });
+    </script>
+    
 
 <div id="post-content" style="line-height: 1.75; font-size: 1rem;">
   <h2>Overview<span class="hx:absolute hx:-mt-20" id="overview"></span>

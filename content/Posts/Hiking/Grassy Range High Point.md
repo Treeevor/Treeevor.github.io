@@ -18,6 +18,14 @@ beauty: 5.8
 location: Tooele
 strava_link: https://www.strava.com/activities/17477935647
 high_point: true
+photos:
+  - https://imgur.com/SFJX8p8.jpg
+  - https://imgur.com/P2bIoBb.jpg
+  - https://imgur.com/FC6ntQL.jpg
+  - https://imgur.com/GurjPav.jpg
+  - https://imgur.com/BmPKRAu.jpg
+  - https://imgur.com/nmB1nLs.jpg
+  - https://imgur.com/WtM2i3A.jpg
 ---
 
 ## Overview
