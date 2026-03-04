@@ -10,6 +10,13 @@ taxonomies:
   tag: tags
   category: categories
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
 params:
   siteName: "TreevNFred"
   siteTagline: "Adventures with Fred and more"

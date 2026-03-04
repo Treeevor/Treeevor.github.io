@@ -1,0 +1,39 @@
+{{- if not .Site.IsServer }}
+<script data-goatcounter="https://treevnfred.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js">
+</script>
+{{- end }}
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<script>
+// Patch Hextra main.js: inject required elements before DOMContentLoaded fires.
+// main.js queries .hextra-sidebar-container synchronously in its own DOMContentLoaded,
+// so we must guarantee it exists in the DOM before that callback runs.
+// Scripts in <head> run before body is parsed, but DOMContentLoaded callbacks
+// registered earlier fire first — so we patch at the earliest opportunity.
+(function patchHextra() {
+  function inject() {
+    if (!document.querySelector('.hextra-sidebar-container')) {
+      var s = document.createElement('nav');
+      s.className = 'hextra-sidebar-container hx:max-md:[transform:translate3d(0,-100%,0)]';
+      s.setAttribute('aria-hidden', 'true');
+      s.style.cssText = 'display:none';
+      document.body.insertBefore(s, document.body.firstChild);
+    }
+    if (!document.getElementById('search-input')) {
+      var w = document.createElement('div');
+      w.style.display = 'none';
+      w.innerHTML = '<input id="search-input" type="search"><div id="search-results"></div>';
+      document.body.appendChild(w);
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', inject, true); // capture phase = fires first
+  } else {
+    inject();
+  }
+})();
+</script>

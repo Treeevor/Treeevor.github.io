@@ -1,0 +1,16 @@
+<style>
+@media (min-width: 768px) {
+  .hextra-sidebar-container { display: none !important; }
+}
+</style>
+<div class="hextra-sidebar-container hx:max-md:[transform:translate3d(0,-100%,0)]" aria-hidden="true" style="background: var(--tw-prose-body, white); border-bottom: 1px solid #e5e7eb;">
+  <!-- Mobile search -->
+  <div style="padding: 0.75rem 1.25rem; border-bottom: 1px solid #f3f4f6;">
+    {{ partial "search.html" . }}
+  </div>
+  {{ range .Site.Menus.main }}
+  {{ if not .Params.type }}
+  <a href="{{ .URL }}" style="display: block; padding: 0.75rem 1.25rem; font-size: 1rem; text-decoration: none; color: inherit; border-bottom: 1px solid #f3f4f6;">{{ .Name }}</a>
+  {{ end }}
+  {{ end }}
+</div>
